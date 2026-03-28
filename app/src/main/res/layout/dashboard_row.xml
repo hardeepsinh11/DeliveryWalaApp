@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitle_homeMainCatRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#FFF8E5"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/txtPrice"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:backgroundTint="@color/app_color"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/txtPrice"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1.2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btnMinus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/qtyText"
+                        android:layout_weight="0.4"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/text_color"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/qtyText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btnAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/text_color"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgFood"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:elevation="@dimen/_5sdp"
+                android:outlineAmbientShadowColor="@color/app_color"
+                android:outlineSpotShadowColor="@color/app_color"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CardView"
+                app:srcCompat="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImage11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_layout_white"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgFood1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtFoodname"
+                style="@style/rounded_edittext_proxima_nova_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="120dp"
+                android:layout_toRightOf="@+id/imgFood"
+                android:text="Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                style="@style/rounded_edittext_proxima_nova_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color2"
+                android:layout_below="@id/txtFoodname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgFood"
+                android:textSize="16sp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrice"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtQty"
+                    style="@style/rounded_edittext_proxima_nova_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color2"
+                    android:text="Quantity:"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtQty" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

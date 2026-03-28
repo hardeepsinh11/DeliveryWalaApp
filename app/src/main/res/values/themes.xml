@@ -1,0 +1,149 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DeliverywalaApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/app_color</item>
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorAccent">@color/app_color</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/app_color
+        </item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">false</item>
+    </style>
+
+
+    <style name="AppThemeFullScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/app_color</item>
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorAccent">@color/app_color</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/white
+        </item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="tv_wrap_content" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="poppins_semi_bold" parent="tv_wrap_content">
+        <!--        <item name="fontFamily">@font/fon</item>-->
+    </style>
+
+    <style name="white_poppins_semi_bold" parent="poppins_semi_bold">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="custom_checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:fontFamily">@font/poppins_regular</item>-->
+        <item name="buttonTint">@color/app_color</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="fontFamily">@font/proxima_nova_reg</item>
+    </style>
+
+    <!--TextView  Style-->
+    <style name="textview_proxima_nova_reg" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="fontFamily">@font/proxima_nova_reg</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColorHint">@color/text_color</item>
+        <item name="colorControlNormal">@color/text_color</item>
+        <item name="colorControlActivated">@color/text_color</item>
+    </style>
+
+    <style name="textview_proxima_nova_semibold" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="singleLine">true</item>
+        <item name="fontFamily">@font/proxima_nova_semibold</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColorHint">@color/text_color</item>
+        <item name="colorControlNormal">@color/text_color</item>
+        <item name="colorControlActivated">@color/text_color</item>
+    </style>
+
+
+    <!--Edittext Style-->
+    <style name="et_wrap_content" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="singleLine">true</item>
+    </style>
+
+
+    <style name="rounded_edittext_proxima_nova_semibold" parent="et_wrap_content">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="hintTextColor">@color/LTGrey</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="fontFamily">@font/proxima_nova_semibold</item>
+    </style>
+
+    <style name="rounded_edittext_proxima_nova_reg" parent="et_wrap_content">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="hintTextColor">@color/LTGrey</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="fontFamily">@font/proxima_nova_reg</item>
+    </style>
+    <!--Button styles-->
+    <style name="btn_match_parent" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="btn_proxima_nova_semibold" parent="btn_match_parent">
+        <item name="android:background">@drawable/round_corner_button</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/proxima_nova_semibold</item>
+    </style>
+
+    <style name="btn_proxima_nova_reg" parent="btn_match_parent">
+        <item name="android:background">@drawable/round_corner_button</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/proxima_nova_reg</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.CardView" parent="CardView">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSize">20%</item>
+        <item name="cornerSizeTopLeft">20%</item>
+        <item name="cornerSizeTopRight">20%</item>
+        <item name="cornerSizeBottomLeft">20%</item>
+        <item name="cornerSizeBottomRight">20%</item>
+    </style>
+</resources>

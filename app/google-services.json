@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "609187362449",
+    "firebase_url": "https://fooddemoapp-aca0d-default-rtdb.firebaseio.com",
+    "project_id": "fooddemoapp-aca0d",
+    "storage_bucket": "fooddemoapp-aca0d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609187362449:android:dbc4afaf0d7e5661cb7130",
+        "android_client_info": {
+          "package_name": "com.example.deliverywala"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBLQrkCUdrOWv291S-3YaknOMQDiKP8qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Delivery wala</string>
+    <string name="title">Delivery wala</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preference_file_name">FoodRunner Preferences</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="Rs">\u20B9</string>
+
+    <string name="generate_memo">Generate Memo</string>
+    <string name="PersonName">Enter item name</string>
+    <string name="amount">Enter Amount</string>
+    <string name="descritption">Enter Description</string>
+    <string name="netWeight">Net Weight</string>
+
+    <string name="notification_channel_id" translatable="false">my_bag_fcm_id</string>
+    <string name="notification_channel_name">Order Update</string>
+    <string name="notification_channel_desc">A description of the notification.</string>
+
+
+    <string-array name="qty">
+        <item>select quantity</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

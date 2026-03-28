@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".fragments.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnEditAccount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_color"
+            android:paddingLeft="10dp"
+            android:text="Edit Personal Details"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/btnClearHistory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnEditAccount"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_color"
+            android:paddingLeft="10dp"
+            android:text="Clear History"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/btnDeleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnClearHistory"
+
+            android:layout_marginTop="20dp"
+            android:background="@color/app_color"
+            android:paddingLeft="10dp"
+            android:text="Delete Account"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+</FrameLayout>

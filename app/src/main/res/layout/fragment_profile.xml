@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_logo_new"
+            app:civ_border_color="@color/app_color"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/rounded_edittext_proxima_nova_reg"
+            android:layout_height="40dp"
+            android:textColor="@color/text_color2"
+            android:layout_below="@id/imgProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border_layout_white"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtPhoneNumber"
+            android:textColor="@color/text_color2"
+            style="@style/rounded_edittext_proxima_nova_reg"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border_layout_white"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="+91-1234567890"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            style="@style/rounded_edittext_proxima_nova_reg"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtPhoneNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color2"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border_layout_white"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="Email Address"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            style="@style/rounded_edittext_proxima_nova_reg"
+            android:layout_height="40dp"
+            android:textColor="@color/text_color2"
+            android:layout_below="@id/txtEmail"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border_layout_white"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="Delivery Address"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</FrameLayout>
